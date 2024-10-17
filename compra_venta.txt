@@ -1,0 +1,44 @@
+compra_venta	index
+c:\users\jnpa2\documents\sistemasdis\compra_venta.py
+ 
+Functions
+      	 	
+actualizar_venta(clienteId)
+Actualiza una venta existente por el ID de cliente.
+ 
+:param clienteId: ID del cliente cuya venta se desea actualizar.
+:return: Un JSON con el estado de la operación y la venta actualizada.
+:rtype: jsonify
+eliminar_venta(clienteId)
+Elimina una venta existente por el ID de cliente.
+ 
+:param clienteId: ID del cliente cuya venta se desea eliminar.
+:return: Un JSON con el estado de la operación.
+:rtype: jsonify
+get_compras()
+Obtiene todas las compras registradas.
+ 
+:return: Un JSON con todas las compras.
+:rtype: jsonify
+get_ventas()
+Obtiene todas las ventas registradas.
+ 
+:return: Un JSON con todas las ventas.
+:rtype: jsonify
+registrar_compra()
+Registra una nueva compra en la base de datos.
+ 
+:return: Un JSON con el estado de la operación y la compra registrada.
+:rtype: jsonify
+registrar_venta()
+Registra una nueva venta en la base de datos.
+ 
+:return: Un JSON con el estado de la operación y la venta registrada.
+:rtype: jsonify
+
+ 
+Data
+      	 	app = <Flask 'compra_venta'>
+comprasDB = []
+request = <LocalProxy unbound>
+ventasDB = []
